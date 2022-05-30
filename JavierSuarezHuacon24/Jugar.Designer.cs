@@ -30,7 +30,8 @@ namespace JavierSuarezHuacon24
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelPregunta = new System.Windows.Forms.Label();
+            this.comboBoxRespuestas = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -42,21 +43,31 @@ namespace JavierSuarezHuacon24
             this.label1.TabIndex = 0;
             this.label1.Text = "Seleccione la opción correcta de la pregunta";
             // 
-            // label2
+            // labelPregunta
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 169);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "labelPregunta";
+            this.labelPregunta.AutoSize = true;
+            this.labelPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPregunta.Location = new System.Drawing.Point(90, 169);
+            this.labelPregunta.Name = "labelPregunta";
+            this.labelPregunta.Size = new System.Drawing.Size(118, 29);
+            this.labelPregunta.TabIndex = 1;
+            this.labelPregunta.Text = "Pregunta";
+            // 
+            // comboBoxRespuestas
+            // 
+            this.comboBoxRespuestas.FormattingEnabled = true;
+            this.comboBoxRespuestas.Location = new System.Drawing.Point(87, 229);
+            this.comboBoxRespuestas.Name = "comboBoxRespuestas";
+            this.comboBoxRespuestas.Size = new System.Drawing.Size(284, 28);
+            this.comboBoxRespuestas.TabIndex = 2;
             // 
             // Jugar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(737, 607);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBoxRespuestas);
+            this.Controls.Add(this.labelPregunta);
             this.Controls.Add(this.label1);
             this.Name = "Jugar";
             this.Text = "Hola Soy Mister Question";
@@ -68,6 +79,7 @@ namespace JavierSuarezHuacon24
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelPregunta;
+        private System.Windows.Forms.ComboBox comboBoxRespuestas;
     }
 }
