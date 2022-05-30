@@ -93,6 +93,7 @@ namespace JavierSuarezHuacon24
             this.btnAñadirPreguntasRespuestas.TabIndex = 5;
             this.btnAñadirPreguntasRespuestas.Text = "Añadir preguntas y respuestas";
             this.btnAñadirPreguntasRespuestas.UseVisualStyleBackColor = true;
+            this.btnAñadirPreguntasRespuestas.Click += new System.EventHandler(this.btnAñadirPreguntasRespuestas_Click);
             // 
             // btnJugar
             // 

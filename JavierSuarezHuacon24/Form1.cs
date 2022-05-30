@@ -16,5 +16,12 @@ namespace JavierSuarezHuacon24
         {
             InitializeComponent();
         }
+
+        private void btnAñadirPreguntasRespuestas_Click(object sender, EventArgs e)
+        {
+            AñadirPreguntasRespuestas a = new AñadirPreguntasRespuestas();
+            a.Show();
+            this.Hide();
+        }
     }
 }
