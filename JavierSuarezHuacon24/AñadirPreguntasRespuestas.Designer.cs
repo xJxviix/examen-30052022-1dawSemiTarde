@@ -38,6 +38,9 @@ namespace JavierSuarezHuacon24
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +63,7 @@ namespace JavierSuarezHuacon24
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(229, 131);
+            this.textBox1.Location = new System.Drawing.Point(199, 131);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(312, 26);
             this.textBox1.TabIndex = 2;
@@ -113,11 +116,39 @@ namespace JavierSuarezHuacon24
             this.label5.TabIndex = 8;
             this.label5.Text = "C";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(80, 232);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Respuestas";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(80, 517);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 20);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Valor";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(170, 511);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 26);
+            this.textBox5.TabIndex = 11;
+            // 
             // AñadirPreguntasRespuestas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 630);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -145,5 +176,8 @@ namespace JavierSuarezHuacon24
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
