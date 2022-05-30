@@ -81,6 +81,7 @@ namespace JavierSuarezHuacon24
             this.btnEstoySeguro.TabIndex = 4;
             this.btnEstoySeguro.Text = "Estoy Seguro";
             this.btnEstoySeguro.UseVisualStyleBackColor = true;
+            this.btnEstoySeguro.Click += new System.EventHandler(this.btnEstoySeguro_Click);
             // 
             // Jugar
             // 

@@ -22,5 +22,17 @@ namespace JavierSuarezHuacon24
         {
 
         }
+
+        private void btnEstoySeguro_Click(object sender, EventArgs e)
+        {
+            if (comboBoxRespuestas.SelectedItem.ToString() == "Madrid")
+            {
+                MessageBox.Show("Has Acertado, has ganado un total de " + );
+            }
+            else
+            {
+                MessageBox.Show("Has fallado");
+            }
+        }
     }
 }
