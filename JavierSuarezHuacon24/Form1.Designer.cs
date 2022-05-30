@@ -35,6 +35,8 @@ namespace JavierSuarezHuacon24
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.labelPuntuacion = new System.Windows.Forms.Label();
+            this.btnAñadirPreguntasRespuestas = new System.Windows.Forms.Button();
+            this.btnJugar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,11 +85,31 @@ namespace JavierSuarezHuacon24
             this.labelPuntuacion.TabIndex = 4;
             this.labelPuntuacion.Text = "0";
             // 
+            // btnAñadirPreguntasRespuestas
+            // 
+            this.btnAñadirPreguntasRespuestas.Location = new System.Drawing.Point(231, 330);
+            this.btnAñadirPreguntasRespuestas.Name = "btnAñadirPreguntasRespuestas";
+            this.btnAñadirPreguntasRespuestas.Size = new System.Drawing.Size(276, 67);
+            this.btnAñadirPreguntasRespuestas.TabIndex = 5;
+            this.btnAñadirPreguntasRespuestas.Text = "Añadir preguntas y respuestas";
+            this.btnAñadirPreguntasRespuestas.UseVisualStyleBackColor = true;
+            // 
+            // btnJugar
+            // 
+            this.btnJugar.Location = new System.Drawing.Point(231, 438);
+            this.btnJugar.Name = "btnJugar";
+            this.btnJugar.Size = new System.Drawing.Size(276, 67);
+            this.btnJugar.TabIndex = 6;
+            this.btnJugar.Text = "Jugar";
+            this.btnJugar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 606);
+            this.Controls.Add(this.btnJugar);
+            this.Controls.Add(this.btnAñadirPreguntasRespuestas);
             this.Controls.Add(this.labelPuntuacion);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.label2);
@@ -108,6 +130,8 @@ namespace JavierSuarezHuacon24
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.Label labelPuntuacion;
+        private System.Windows.Forms.Button btnAñadirPreguntasRespuestas;
+        private System.Windows.Forms.Button btnJugar;
     }
 }
 
