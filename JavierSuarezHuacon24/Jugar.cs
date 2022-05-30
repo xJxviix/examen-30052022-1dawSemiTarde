@@ -12,9 +12,15 @@ namespace JavierSuarezHuacon24
 {
     public partial class Jugar : Form
     {
+
         public Jugar()
         {
             InitializeComponent();
+        }
+
+        private void btnNiIdea_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

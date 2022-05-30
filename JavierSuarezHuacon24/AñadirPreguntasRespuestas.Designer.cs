@@ -32,15 +32,15 @@ namespace JavierSuarezHuacon24
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxPregunta = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxRespuestaA = new System.Windows.Forms.TextBox();
+            this.textBoxRespuestaB = new System.Windows.Forms.TextBox();
+            this.textBoxRespuestaC = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxValor = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -70,26 +70,26 @@ namespace JavierSuarezHuacon24
             this.textBoxPregunta.Size = new System.Drawing.Size(312, 26);
             this.textBoxPregunta.TabIndex = 2;
             // 
-            // textBox2
+            // textBoxRespuestaA
             // 
-            this.textBox2.Location = new System.Drawing.Point(130, 291);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(246, 26);
-            this.textBox2.TabIndex = 3;
+            this.textBoxRespuestaA.Location = new System.Drawing.Point(130, 291);
+            this.textBoxRespuestaA.Name = "textBoxRespuestaA";
+            this.textBoxRespuestaA.Size = new System.Drawing.Size(246, 26);
+            this.textBoxRespuestaA.TabIndex = 3;
             // 
-            // textBox3
+            // textBoxRespuestaB
             // 
-            this.textBox3.Location = new System.Drawing.Point(130, 353);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(246, 26);
-            this.textBox3.TabIndex = 4;
+            this.textBoxRespuestaB.Location = new System.Drawing.Point(130, 353);
+            this.textBoxRespuestaB.Name = "textBoxRespuestaB";
+            this.textBoxRespuestaB.Size = new System.Drawing.Size(246, 26);
+            this.textBoxRespuestaB.TabIndex = 4;
             // 
-            // textBox4
+            // textBoxRespuestaC
             // 
-            this.textBox4.Location = new System.Drawing.Point(130, 418);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(246, 26);
-            this.textBox4.TabIndex = 5;
+            this.textBoxRespuestaC.Location = new System.Drawing.Point(130, 418);
+            this.textBoxRespuestaC.Name = "textBoxRespuestaC";
+            this.textBoxRespuestaC.Size = new System.Drawing.Size(246, 26);
+            this.textBoxRespuestaC.TabIndex = 5;
             // 
             // label3
             // 
@@ -136,12 +136,12 @@ namespace JavierSuarezHuacon24
             this.label7.TabIndex = 10;
             this.label7.Text = "Valor";
             // 
-            // textBox5
+            // textBoxValor
             // 
-            this.textBox5.Location = new System.Drawing.Point(170, 511);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 26);
-            this.textBox5.TabIndex = 11;
+            this.textBoxValor.Location = new System.Drawing.Point(170, 511);
+            this.textBoxValor.Name = "textBoxValor";
+            this.textBoxValor.Size = new System.Drawing.Size(100, 26);
+            this.textBoxValor.TabIndex = 11;
             // 
             // btnGuardar
             // 
@@ -151,6 +151,7 @@ namespace JavierSuarezHuacon24
             this.btnGuardar.TabIndex = 12;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
@@ -169,15 +170,15 @@ namespace JavierSuarezHuacon24
             this.ClientSize = new System.Drawing.Size(839, 630);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBoxValor);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxRespuestaC);
+            this.Controls.Add(this.textBoxRespuestaB);
+            this.Controls.Add(this.textBoxRespuestaA);
             this.Controls.Add(this.textBoxPregunta);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -192,15 +193,15 @@ namespace JavierSuarezHuacon24
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxRespuestaA;
+        private System.Windows.Forms.TextBox textBoxRespuestaB;
+        private System.Windows.Forms.TextBox textBoxRespuestaC;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxValor;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
         public System.Windows.Forms.TextBox textBoxPregunta;

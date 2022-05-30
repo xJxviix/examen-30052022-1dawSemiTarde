@@ -71,6 +71,7 @@ namespace JavierSuarezHuacon24
             this.btnNiIdea.TabIndex = 3;
             this.btnNiIdea.Text = "Ni idea";
             this.btnNiIdea.UseVisualStyleBackColor = true;
+            this.btnNiIdea.Click += new System.EventHandler(this.btnNiIdea_Click);
             // 
             // btnEstoySeguro
             // 
@@ -101,9 +102,9 @@ namespace JavierSuarezHuacon24
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelPregunta;
-        private System.Windows.Forms.ComboBox comboBoxRespuestas;
         private System.Windows.Forms.Button btnNiIdea;
         private System.Windows.Forms.Button btnEstoySeguro;
+        public System.Windows.Forms.Label labelPregunta;
+        public System.Windows.Forms.ComboBox comboBoxRespuestas;
     }
 }
