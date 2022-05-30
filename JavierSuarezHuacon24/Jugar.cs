@@ -27,7 +27,7 @@ namespace JavierSuarezHuacon24
         {
             if (comboBoxRespuestas.SelectedItem.ToString() == "Madrid")
             {
-                MessageBox.Show("Has Acertado, has ganado un total de " + );
+                MessageBox.Show("Has Acertado, has ganado un total de " );
             }
             else
             {

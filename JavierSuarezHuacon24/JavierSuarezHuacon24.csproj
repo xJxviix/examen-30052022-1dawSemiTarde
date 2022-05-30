@@ -64,6 +64,7 @@
     <Compile Include="Jugar.Designer.cs">
       <DependentUpon>Jugar.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\QuestionModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AñadirPreguntasRespuestas.resx">
