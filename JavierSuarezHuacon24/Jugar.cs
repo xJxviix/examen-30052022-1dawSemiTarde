@@ -23,7 +23,10 @@ namespace JavierSuarezHuacon24
 
         private void btnNiIdea_Click(object sender, EventArgs e)
         {
-
+            AñadirPreguntasRespuestas a = new AñadirPreguntasRespuestas();
+            MessageBox.Show("Has fallado, te restamos -2 puntos");
+            a.Show();
+            this.Hide();
         }
 
         private void btnEstoySeguro_Click(object sender, EventArgs e)
@@ -35,7 +38,7 @@ namespace JavierSuarezHuacon24
             }
             else
             {
-                MessageBox.Show("Has fallado");
+                MessageBox.Show("Has fallado.");
             }
         }
     }
