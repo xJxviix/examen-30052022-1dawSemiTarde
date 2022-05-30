@@ -12,16 +12,33 @@ namespace JavierSuarezHuacon24
 {
     public partial class Form1 : Form
     {
+        AñadirPreguntasRespuestas a;
+        Jugar j;
         public Form1()
         {
             InitializeComponent();
+            a = new AñadirPreguntasRespuestas();
+            j = new Jugar();
         }
 
         private void btnAñadirPreguntasRespuestas_Click(object sender, EventArgs e)
         {
-            AñadirPreguntasRespuestas a = new AñadirPreguntasRespuestas();
             a.Show();
             this.Hide();
+        }
+
+        private void btnJugar_Click(object sender, EventArgs e)
+        {
+            if(a.textBoxPregunta.Text == "")
+            {
+                a.Show();
+                this.Hide();
+            }
+            else
+            {
+                j.Show();
+                this.Hide();
+            }
         }
     }
 }

@@ -103,6 +103,7 @@ namespace JavierSuarezHuacon24
             this.btnJugar.TabIndex = 6;
             this.btnJugar.Text = "Jugar";
             this.btnJugar.UseVisualStyleBackColor = true;
+            this.btnJugar.Click += new System.EventHandler(this.btnJugar_Click);
             // 
             // Form1
             // 

@@ -31,7 +31,7 @@ namespace JavierSuarezHuacon24
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPregunta = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -63,12 +63,12 @@ namespace JavierSuarezHuacon24
             this.label2.TabIndex = 1;
             this.label2.Text = "Pregunta:";
             // 
-            // textBox1
+            // textBoxPregunta
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(312, 26);
-            this.textBox1.TabIndex = 2;
+            this.textBoxPregunta.Location = new System.Drawing.Point(199, 131);
+            this.textBoxPregunta.Name = "textBoxPregunta";
+            this.textBoxPregunta.Size = new System.Drawing.Size(312, 26);
+            this.textBoxPregunta.TabIndex = 2;
             // 
             // textBox2
             // 
@@ -177,7 +177,7 @@ namespace JavierSuarezHuacon24
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPregunta);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AñadirPreguntasRespuestas";
@@ -191,7 +191,6 @@ namespace JavierSuarezHuacon24
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
@@ -203,5 +202,6 @@ namespace JavierSuarezHuacon24
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
+        public System.Windows.Forms.TextBox textBoxPregunta;
     }
 }
