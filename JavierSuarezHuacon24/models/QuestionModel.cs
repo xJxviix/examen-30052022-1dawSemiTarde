@@ -13,6 +13,8 @@ namespace JavierSuarezHuacon24.models
         private String[] answers;
         private int value;
 
+        public QuestionModel() { }
+
         public QuestionModel(string question, string[] answers, int value)
         {
             this.question = question;

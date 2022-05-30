@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JavierSuarezHuacon24.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,12 @@ namespace JavierSuarezHuacon24
 {
     public partial class AñadirPreguntasRespuestas : Form
     {
+        QuestionModel p;
 
-       
         public AñadirPreguntasRespuestas()
         {
             InitializeComponent();
-            
+            p = new QuestionModel();
 
         }
 
@@ -28,12 +29,13 @@ namespace JavierSuarezHuacon24
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+           
             Jugar j = new Jugar();
             j.labelPregunta.Text = textBoxPregunta.Text;
             j.comboBoxRespuestas.Items.Add(textBoxRespuestaA.Text);
             j.comboBoxRespuestas.Items.Add(textBoxRespuestaB.Text);
             j.comboBoxRespuestas.Items.Add(textBoxRespuestaC.Text);
-
+            p.Value = Int32.Parse(textBoxValor.Text.ToString());
             j.Show();
 
 

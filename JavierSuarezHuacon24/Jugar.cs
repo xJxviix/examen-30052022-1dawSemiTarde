@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JavierSuarezHuacon24.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,11 @@ namespace JavierSuarezHuacon24
     public partial class Jugar : Form
     {
 
+        QuestionModel res;
         public Jugar()
         {
             InitializeComponent();
+            res = new QuestionModel();
         }
 
         private void btnNiIdea_Click(object sender, EventArgs e)
@@ -25,9 +28,10 @@ namespace JavierSuarezHuacon24
 
         private void btnEstoySeguro_Click(object sender, EventArgs e)
         {
+            //res.Value =
             if (comboBoxRespuestas.SelectedItem.ToString() == "Madrid")
             {
-                MessageBox.Show("Has Acertado, has ganado un total de " );
+                MessageBox.Show("Has Acertado, has ganado un total de " + res.Value);
             }
             else
             {
